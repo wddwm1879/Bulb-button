@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BULB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="main">
+       <div id="toggle">
+           <div id="button"></div>
+           </div>
+           <div id="bulb"></div>
+   </div>
+   <script>
+       const body = document.querySelector('body')
+       const bulb = document.getElementById('bulb')
+       const toggle = document.getElementById('toggle')
+        toggle.onclick = function()
+        {
+            body.classList.toggle('active');
+            bulb.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
